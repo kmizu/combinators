@@ -1,4 +1,4 @@
-package parser.ex4;
+package parser.ex5;
 
 public class Cat<X, Y> implements Parser<Tuple2<X, Y>> {
 	private Parser<X> lhs;

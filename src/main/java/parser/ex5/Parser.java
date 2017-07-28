@@ -1,4 +1,4 @@
-package parser.ex4;
+package parser.ex5;
 
 import java.util.List;
 
@@ -16,4 +16,7 @@ public interface Parser<T> {
 	default Parser<List<T>> many() {
 		return new ManyParser<T>(this);
 	}
+	static Parser<String> EOF() {
+	    return new EOFParser();
+    }
 }
